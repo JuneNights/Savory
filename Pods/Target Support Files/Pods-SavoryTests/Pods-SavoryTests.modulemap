@@ -1,0 +1,6 @@
+framework module Pods_SavoryTests {
+  umbrella header "Pods-SavoryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

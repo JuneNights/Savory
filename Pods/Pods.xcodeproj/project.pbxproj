@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		382653DA7F6277671ABEB4E741EE2411 /* Pods-Savory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AABDCB275F7AF7CD089CF2F9B8600FB /* Pods-Savory-dummy.m */; };
+		4093C052580F19E6664725064C64C337 /* Pods-Savory-SavoryUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFD00E6DBD5D6C17899F49AB86C61ED /* Pods-Savory-SavoryUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95DC5A4DD36EE8F4DFC83256BE38C066 /* Pods-Savory-SavoryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B97B192BB9190D484208F6FA6C7AC /* Pods-Savory-SavoryUITests-dummy.m */; };
+		A6B003295375D5FB94103E28388FCD99 /* Pods-Savory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C790CD3811528BCFBA503140EB506A /* Pods-Savory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9A3F8A9878C6168CBDCF361CF841D9B /* Pods-SavoryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF579FC23E3BDBBD09C5513CEC56288 /* Pods-SavoryTests-dummy.m */; };
+		C444C69554F77AA801B57FE783356EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DC56E03E27472AA5A87AC008BC708784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F227F958FBE83D19E12CE0F042313081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F90BED49D355F1B1819DC2823B374217 /* Pods-SavoryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2556F3C19A84946A8D3F79FCB56D161 /* Pods-SavoryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4E4B3CC0E4BCFF6BD0DE6561BB12E44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D7CAC6474A19A50E5B7445454CA0CA;
+			remoteInfo = "Pods-Savory";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002AF8F7525CF2BE77E6886142C0A49C /* Pods-SavoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SavoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		088A59928BF833B2ABA79719154C113B /* Pods-Savory-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-Info.plist"; sourceTree = "<group>"; };
+		0B0B97B192BB9190D484208F6FA6C7AC /* Pods-Savory-SavoryUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Savory-SavoryUITests-dummy.m"; sourceTree = "<group>"; };
+		0CFD00E6DBD5D6C17899F49AB86C61ED /* Pods-Savory-SavoryUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Savory-SavoryUITests-umbrella.h"; sourceTree = "<group>"; };
+		1A9591281C23D719A483B0E202F24BFB /* Pods-Savory-SavoryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-SavoryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		34F0532527AE832F3910C58E9D4D46E6 /* Pods-Savory */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Savory"; path = Pods_Savory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5376B58924045C03C16CE497D46243AB /* Pods-Savory-SavoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory-SavoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AABDCB275F7AF7CD089CF2F9B8600FB /* Pods-Savory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Savory-dummy.m"; sourceTree = "<group>"; };
+		5BF579FC23E3BDBBD09C5513CEC56288 /* Pods-SavoryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SavoryTests-dummy.m"; sourceTree = "<group>"; };
+		6A5916FADE75C24409A7A35C7CE089FD /* Pods-SavoryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SavoryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B1A7D87781ED86F84565DCCF6BBF798 /* Pods-Savory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Savory.modulemap"; sourceTree = "<group>"; };
+		7BC254A1BB6E89BB81DAE92BA0D17BF5 /* Pods-Savory-SavoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory-SavoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		95950FCBB31CC16232A124474FBF2384 /* Pods-Savory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory.release.xcconfig"; sourceTree = "<group>"; };
+		97986116981EE1E94A22EE43E875D01D /* Pods-SavoryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SavoryTests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB31E98C5BFDA5E9919E29C118D9439 /* Pods-SavoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SavoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A103B2EBD46532818ED86EA8152AF12C /* Pods-Savory-SavoryUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Savory-SavoryUITests.modulemap"; sourceTree = "<group>"; };
+		A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Savory-SavoryUITests"; path = Pods_Savory_SavoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15273E89CABFC9760EBFFBEF4C5BD45 /* Pods-SavoryTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SavoryTests"; path = Pods_SavoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96DB9C83E52A3C7162E364595F3C751 /* Pods-SavoryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SavoryTests-Info.plist"; sourceTree = "<group>"; };
+		C0D17770A78A8F960A2BA74C9A7C5F3A /* Pods-Savory-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-acknowledgements.plist"; sourceTree = "<group>"; };
+		C89C25181C481DDEE062F6BD81059616 /* Pods-SavoryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SavoryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D440AE49826F9EB6732BEC90C3A3B106 /* Pods-Savory-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Savory-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8C790CD3811528BCFBA503140EB506A /* Pods-Savory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Savory-umbrella.h"; sourceTree = "<group>"; };
+		DAA5FB26048A405B762892CC19C1537E /* Pods-Savory-SavoryUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Savory-SavoryUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2556F3C19A84946A8D3F79FCB56D161 /* Pods-SavoryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SavoryTests-umbrella.h"; sourceTree = "<group>"; };
+		EE54225BC953F39338AC6529F3D051EC /* Pods-Savory-SavoryUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-SavoryUITests-Info.plist"; sourceTree = "<group>"; };
+		FD2B401922624104F854A0216E8E530A /* Pods-Savory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		548F0C4E3F0256688406AD7B78DE0DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C444C69554F77AA801B57FE783356EC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DBD112F992381E70195916A5900971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC56E03E27472AA5A87AC008BC708784 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B00AA732477545C51D367612E2A618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F227F958FBE83D19E12CE0F042313081 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0597F4CEDB3491F8767567BACFC0836C /* Pods-Savory */ = {
+			isa = PBXGroup;
+			children = (
+				7B1A7D87781ED86F84565DCCF6BBF798 /* Pods-Savory.modulemap */,
+				D440AE49826F9EB6732BEC90C3A3B106 /* Pods-Savory-acknowledgements.markdown */,
+				C0D17770A78A8F960A2BA74C9A7C5F3A /* Pods-Savory-acknowledgements.plist */,
+				5AABDCB275F7AF7CD089CF2F9B8600FB /* Pods-Savory-dummy.m */,
+				088A59928BF833B2ABA79719154C113B /* Pods-Savory-Info.plist */,
+				D8C790CD3811528BCFBA503140EB506A /* Pods-Savory-umbrella.h */,
+				FD2B401922624104F854A0216E8E530A /* Pods-Savory.debug.xcconfig */,
+				95950FCBB31CC16232A124474FBF2384 /* Pods-Savory.release.xcconfig */,
+			);
+			name = "Pods-Savory";
+			path = "Target Support Files/Pods-Savory";
+			sourceTree = "<group>";
+		};
+		1F6C128E807BD5A68E0D541902482017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34F0532527AE832F3910C58E9D4D46E6 /* Pods-Savory */,
+				A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */,
+				B15273E89CABFC9760EBFFBEF4C5BD45 /* Pods-SavoryTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6124E9D4C29EAE22A1BC1E35AFA724D4 /* Pods-Savory-SavoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A103B2EBD46532818ED86EA8152AF12C /* Pods-Savory-SavoryUITests.modulemap */,
+				DAA5FB26048A405B762892CC19C1537E /* Pods-Savory-SavoryUITests-acknowledgements.markdown */,
+				1A9591281C23D719A483B0E202F24BFB /* Pods-Savory-SavoryUITests-acknowledgements.plist */,
+				0B0B97B192BB9190D484208F6FA6C7AC /* Pods-Savory-SavoryUITests-dummy.m */,
+				EE54225BC953F39338AC6529F3D051EC /* Pods-Savory-SavoryUITests-Info.plist */,
+				0CFD00E6DBD5D6C17899F49AB86C61ED /* Pods-Savory-SavoryUITests-umbrella.h */,
+				5376B58924045C03C16CE497D46243AB /* Pods-Savory-SavoryUITests.debug.xcconfig */,
+				7BC254A1BB6E89BB81DAE92BA0D17BF5 /* Pods-Savory-SavoryUITests.release.xcconfig */,
+			);
+			name = "Pods-Savory-SavoryUITests";
+			path = "Target Support Files/Pods-Savory-SavoryUITests";
+			sourceTree = "<group>";
+		};
+		7BF49BC8413FC93A140F7A5C93499960 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0597F4CEDB3491F8767567BACFC0836C /* Pods-Savory */,
+				6124E9D4C29EAE22A1BC1E35AFA724D4 /* Pods-Savory-SavoryUITests */,
+				F3C15E0183865CD6A09DB115168D7033 /* Pods-SavoryTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1F6C128E807BD5A68E0D541902482017 /* Products */,
+				7BF49BC8413FC93A140F7A5C93499960 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C15E0183865CD6A09DB115168D7033 /* Pods-SavoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				97986116981EE1E94A22EE43E875D01D /* Pods-SavoryTests.modulemap */,
+				C89C25181C481DDEE062F6BD81059616 /* Pods-SavoryTests-acknowledgements.markdown */,
+				6A5916FADE75C24409A7A35C7CE089FD /* Pods-SavoryTests-acknowledgements.plist */,
+				5BF579FC23E3BDBBD09C5513CEC56288 /* Pods-SavoryTests-dummy.m */,
+				B96DB9C83E52A3C7162E364595F3C751 /* Pods-SavoryTests-Info.plist */,
+				E2556F3C19A84946A8D3F79FCB56D161 /* Pods-SavoryTests-umbrella.h */,
+				9DB31E98C5BFDA5E9919E29C118D9439 /* Pods-SavoryTests.debug.xcconfig */,
+				002AF8F7525CF2BE77E6886142C0A49C /* Pods-SavoryTests.release.xcconfig */,
+			);
+			name = "Pods-SavoryTests";
+			path = "Target Support Files/Pods-SavoryTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E847D080C7F982579CACAFB41C0B8D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B003295375D5FB94103E28388FCD99 /* Pods-Savory-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770AF8738E9AABDEB19B13AED6C04D0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90BED49D355F1B1819DC2823B374217 /* Pods-SavoryTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9127EA0F07BB73163FF522190BA18F1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4093C052580F19E6664725064C64C337 /* Pods-Savory-SavoryUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		33D7CAC6474A19A50E5B7445454CA0CA /* Pods-Savory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038FF00F9286B74D7622C7B651AB5433 /* Build configuration list for PBXNativeTarget "Pods-Savory" */;
+			buildPhases = (
+				3E847D080C7F982579CACAFB41C0B8D8 /* Headers */,
+				60D01C95E01FA2D6EDA5E83B08898CBA /* Sources */,
+				C4B00AA732477545C51D367612E2A618 /* Frameworks */,
+				EEC61DD5D4D4DBBBFE736454EE3A239F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Savory";
+			productName = Pods_Savory;
+			productReference = 34F0532527AE832F3910C58E9D4D46E6 /* Pods-Savory */;
+			productType = "com.apple.product-type.framework";
+		};
+		49E5CC3A91D333E7FDB0863B066EA0D9 /* Pods-SavoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F00A4A052084CEEF27968F272AB3AC /* Build configuration list for PBXNativeTarget "Pods-SavoryTests" */;
+			buildPhases = (
+				770AF8738E9AABDEB19B13AED6C04D0A /* Headers */,
+				64CD943937E81C495147A9D3666CC701 /* Sources */,
+				C3DBD112F992381E70195916A5900971 /* Frameworks */,
+				EB67051A98D4BA365B2DD706F98665B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF68519E1C10BB5DFD70611281CDC3F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-SavoryTests";
+			productName = Pods_SavoryTests;
+			productReference = B15273E89CABFC9760EBFFBEF4C5BD45 /* Pods-SavoryTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		978448148F44EEAB6751A80B37118156 /* Pods-Savory-SavoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC869565C64231A0FB62524F442373E /* Build configuration list for PBXNativeTarget "Pods-Savory-SavoryUITests" */;
+			buildPhases = (
+				9127EA0F07BB73163FF522190BA18F1C /* Headers */,
+				BFC9D04DFBFED4ED9C090171920ABB5C /* Sources */,
+				548F0C4E3F0256688406AD7B78DE0DCA /* Frameworks */,
+				8732CCAB3D6AA31375BBDF10D399760A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Savory-SavoryUITests";
+			productName = Pods_Savory_SavoryUITests;
+			productReference = A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1F6C128E807BD5A68E0D541902482017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33D7CAC6474A19A50E5B7445454CA0CA /* Pods-Savory */,
+				978448148F44EEAB6751A80B37118156 /* Pods-Savory-SavoryUITests */,
+				49E5CC3A91D333E7FDB0863B066EA0D9 /* Pods-SavoryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8732CCAB3D6AA31375BBDF10D399760A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB67051A98D4BA365B2DD706F98665B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEC61DD5D4D4DBBBFE736454EE3A239F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60D01C95E01FA2D6EDA5E83B08898CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				382653DA7F6277671ABEB4E741EE2411 /* Pods-Savory-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CD943937E81C495147A9D3666CC701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A3F8A9878C6168CBDCF361CF841D9B /* Pods-SavoryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC9D04DFBFED4ED9C090171920ABB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95DC5A4DD36EE8F4DFC83256BE38C066 /* Pods-Savory-SavoryUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF68519E1C10BB5DFD70611281CDC3F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Savory";
+			target = 33D7CAC6474A19A50E5B7445454CA0CA /* Pods-Savory */;
+			targetProxy = B4E4B3CC0E4BCFF6BD0DE6561BB12E44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		032504F201C69275441D32C68CCD1F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1B192540F2A9837BEB6ED81A645D6731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5376B58924045C03C16CE497D46243AB /* Pods-Savory-SavoryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		626E0704EBAFAA182C5BBFD79F332D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2B401922624104F854A0216E8E530A /* Pods-Savory.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Savory/Pods-Savory-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Savory/Pods-Savory.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E1C537A5FE3938434CB37C23FFAD108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95950FCBB31CC16232A124474FBF2384 /* Pods-Savory.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Savory/Pods-Savory-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Savory/Pods-Savory.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74F8EAB1DF12EB306CC4DFBC425E301C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC254A1BB6E89BB81DAE92BA0D17BF5 /* Pods-Savory-SavoryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77C687B4C1F1CEB6831544058B01CD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002AF8F7525CF2BE77E6886142C0A49C /* Pods-SavoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D47B4BFDFA135137C4B9F9209EE875BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB31E98C5BFDA5E9919E29C118D9439 /* Pods-SavoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038FF00F9286B74D7622C7B651AB5433 /* Build configuration list for PBXNativeTarget "Pods-Savory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626E0704EBAFAA182C5BBFD79F332D21 /* Debug */,
+				6E1C537A5FE3938434CB37C23FFAD108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC869565C64231A0FB62524F442373E /* Build configuration list for PBXNativeTarget "Pods-Savory-SavoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B192540F2A9837BEB6ED81A645D6731 /* Debug */,
+				74F8EAB1DF12EB306CC4DFBC425E301C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25F00A4A052084CEEF27968F272AB3AC /* Build configuration list for PBXNativeTarget "Pods-SavoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D47B4BFDFA135137C4B9F9209EE875BA /* Debug */,
+				77C687B4C1F1CEB6831544058B01CD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */,
+				032504F201C69275441D32C68CCD1F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
