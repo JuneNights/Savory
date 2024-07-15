@@ -35,6 +35,8 @@
 		BD3E5AE32C45584100717A7B /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E5AE22C45584100717A7B /* Font+Extensions.swift */; };
 		BD3E5AE52C455AB200717A7B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E5AE42C455AB200717A7B /* Color+Extensions.swift */; };
 		BD3E5AE72C455BFC00717A7B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E5AE62C455BFC00717A7B /* AppColors.swift */; };
+		BDADA29B2C4589F10006121C /* TabsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDADA29A2C4589F10006121C /* TabsUI.swift */; };
+		BDADA29D2C458A2F0006121C /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDADA29C2C458A2F0006121C /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		BD3E5AE22C45584100717A7B /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		BD3E5AE42C455AB200717A7B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		BD3E5AE62C455BFC00717A7B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		BDADA29A2C4589F10006121C /* TabsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsUI.swift; sourceTree = "<group>"; };
+		BDADA29C2C458A2F0006121C /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		C506A0F35B97A16D0BFDC08F /* Pods_Savory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Savory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A05A5BB3F04EAD49C5E22C /* Pods-SavoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryTests.release.xcconfig"; path = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0FA1FF3227937A2EC06CCE0 /* Pods-SavoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryTests.debug.xcconfig"; path = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 			children = (
 				BD3E5A8F2C454D8B00717A7B /* SavoryApp.swift */,
 				BD3E5ABE2C454EE400717A7B /* MainView.swift */,
+				BDADA29A2C4589F10006121C /* TabsUI.swift */,
+				BDADA29C2C458A2F0006121C /* CustomTabBar.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -489,6 +495,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3E5ABF2C454EE400717A7B /* MainView.swift in Sources */,
+				BDADA29B2C4589F10006121C /* TabsUI.swift in Sources */,
+				BDADA29D2C458A2F0006121C /* CustomTabBar.swift in Sources */,
 				BD3E5AE32C45584100717A7B /* Font+Extensions.swift in Sources */,
 				BD3E5A902C454D8B00717A7B /* SavoryApp.swift in Sources */,
 				BD3E5AE72C455BFC00717A7B /* AppColors.swift in Sources */,
