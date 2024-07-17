@@ -37,6 +37,11 @@
 		BD3E5AE72C455BFC00717A7B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E5AE62C455BFC00717A7B /* AppColors.swift */; };
 		BDADA29B2C4589F10006121C /* TabsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDADA29A2C4589F10006121C /* TabsUI.swift */; };
 		BDADA29D2C458A2F0006121C /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDADA29C2C458A2F0006121C /* CustomTabBar.swift */; };
+		BDEB97EC2C482232009ACD88 /* BrowseMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97EB2C482232009ACD88 /* BrowseMainView.swift */; };
+		BDEB97EE2C482253009ACD88 /* CartMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97ED2C482253009ACD88 /* CartMainView.swift */; };
+		BDEB97F02C482260009ACD88 /* SettingsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97EF2C482260009ACD88 /* SettingsMainView.swift */; };
+		BDEB97F22C48226A009ACD88 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97F12C48226A009ACD88 /* ProfileMainView.swift */; };
+		BDEB97F42C482762009ACD88 /* InitialLoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97F32C482762009ACD88 /* InitialLoadingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,11 @@
 		BD3E5AE62C455BFC00717A7B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		BDADA29A2C4589F10006121C /* TabsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsUI.swift; sourceTree = "<group>"; };
 		BDADA29C2C458A2F0006121C /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		BDEB97EB2C482232009ACD88 /* BrowseMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseMainView.swift; sourceTree = "<group>"; };
+		BDEB97ED2C482253009ACD88 /* CartMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartMainView.swift; sourceTree = "<group>"; };
+		BDEB97EF2C482260009ACD88 /* SettingsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainView.swift; sourceTree = "<group>"; };
+		BDEB97F12C48226A009ACD88 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
+		BDEB97F32C482762009ACD88 /* InitialLoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialLoadingScreen.swift; sourceTree = "<group>"; };
 		C506A0F35B97A16D0BFDC08F /* Pods_Savory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Savory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A05A5BB3F04EAD49C5E22C /* Pods-SavoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryTests.release.xcconfig"; path = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0FA1FF3227937A2EC06CCE0 /* Pods-SavoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryTests.debug.xcconfig"; path = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,8 +224,10 @@
 		BD3E5ABB2C454EB700717A7B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BDEB97EA2C482206009ACD88 /* Tabs */,
 				BD3E5A8F2C454D8B00717A7B /* SavoryApp.swift */,
 				BD3E5ABE2C454EE400717A7B /* MainView.swift */,
+				BDEB97F32C482762009ACD88 /* InitialLoadingScreen.swift */,
 				BDADA29A2C4589F10006121C /* TabsUI.swift */,
 				BDADA29C2C458A2F0006121C /* CustomTabBar.swift */,
 			);
@@ -275,6 +287,17 @@
 				BD3E5AE42C455AB200717A7B /* Color+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDEB97EA2C482206009ACD88 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BDEB97EB2C482232009ACD88 /* BrowseMainView.swift */,
+				BDEB97ED2C482253009ACD88 /* CartMainView.swift */,
+				BDEB97EF2C482260009ACD88 /* SettingsMainView.swift */,
+				BDEB97F12C48226A009ACD88 /* ProfileMainView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,11 +518,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3E5ABF2C454EE400717A7B /* MainView.swift in Sources */,
+				BDEB97F42C482762009ACD88 /* InitialLoadingScreen.swift in Sources */,
+				BDEB97EC2C482232009ACD88 /* BrowseMainView.swift in Sources */,
+				BDEB97F22C48226A009ACD88 /* ProfileMainView.swift in Sources */,
+				BDEB97EE2C482253009ACD88 /* CartMainView.swift in Sources */,
 				BDADA29B2C4589F10006121C /* TabsUI.swift in Sources */,
 				BDADA29D2C458A2F0006121C /* CustomTabBar.swift in Sources */,
 				BD3E5AE32C45584100717A7B /* Font+Extensions.swift in Sources */,
 				BD3E5A902C454D8B00717A7B /* SavoryApp.swift in Sources */,
 				BD3E5AE72C455BFC00717A7B /* AppColors.swift in Sources */,
+				BDEB97F02C482260009ACD88 /* SettingsMainView.swift in Sources */,
 				BD3E5AE52C455AB200717A7B /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

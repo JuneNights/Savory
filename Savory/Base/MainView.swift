@@ -9,36 +9,34 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var appColors = AppColors()
-//    @StateObject var tabsUI = TabsUI()
+    @StateObject var tabsViewHelper = TabsUI()
+    @State private var loading: Bool = false
     var body: some View {
-        ZStack {
-            TabView(selection: $tabsViewHelper.mainTabSelected) {
-                FoldersMainView()
-                    .tag(Tab.folders)
-                    .hiddenNavigationBarStyle()
-                    .background(appColors.single(.last))
-                    .foregroundStyle(appColors.single(.first))
-                BrowserMainView()
-                    .tag(Tab.browser)
-                    .hiddenNavigationBarStyle()
-                DownloadsMainView()
-                    .tag(Tab.downloads)
-                    .hiddenNavigationBarStyle()
-                SettingsMainView()
-                    .tag(Tab.settings)
-                    .hiddenNavigationBarStyle()
-            }
-            .environmentObject(tabsViewHelper)
-            .environmentObject(appColors)
-            .environmentObject(filesVM)
-            .opacity(tabsViewHelper.popupIsActive() ? 0.5 : 1)
+        if loading {
             
-            VStack {
-                Spacer()
-                CustomTabBar(selectedTab: $tabsViewHelper.mainTabSelected)
-                    .environmentObject(appColors)
+        } else {
+            ZStack {
+                TabView(selection: $tabsViewHelper.mainTabSelected) {
+                    BrowseMainView()
+                        .tag(Tab.browse)
+                    CartMainView()
+                        .tag(Tab.cart)
+                    SettingsMainView()
+                        .tag(Tab.settings)
+                    ProfileMainView()
+                        .tag(Tab.profile)
+                }
+                .environmentObject(tabsViewHelper)
+                .environmentObject(appColors)
+                .opacity(tabsViewHelper.popupIsActive ? 0.5 : 1)
+                
+                VStack {
+                    Spacer()
+                    CustomTabBar(selectedTab: $tabsViewHelper.mainTabSelected)
+                        .environmentObject(appColors)
+                }
+                
             }
-            
         }
     }
 }

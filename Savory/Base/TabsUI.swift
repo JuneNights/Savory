@@ -9,5 +9,6 @@ import Foundation
 import SwiftUI
 
 class TabsUI: ObservableObject {
-    @Published var mainTabSelected: Tab = .tabOne
+    @Published var mainTabSelected: Tab = .browse
+    @Published var popupIsActive: Bool = false
 }
