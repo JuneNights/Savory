@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: b988b7bd85b7fc78ed3b0eaaba58c214d613489a
+PODS:
+  - ActivityIndicatorView (1.1.1)
+  - ExytePopupView (2.6.2)
+
+DEPENDENCIES:
+  - ActivityIndicatorView
+  - ExytePopupView (~> 2)
+
+SPEC REPOS:
+  trunk:
+    - ActivityIndicatorView
+    - ExytePopupView
+
+SPEC CHECKSUMS:
+  ActivityIndicatorView: f14ac8e200a344fe992577807998b0c8562bd964
+  ExytePopupView: da0e0e357b1a011c2d52fed30a87e94789d3326b
+
+PODFILE CHECKSUM: 00987f22ed7dfc2294b62885a2c600d6e28a3c3e
 
 COCOAPODS: 1.12.1

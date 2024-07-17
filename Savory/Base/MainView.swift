@@ -6,19 +6,23 @@
 //
 
 import SwiftUI
+import ActivityIndicatorView
 
 struct MainView: View {
     @StateObject var appColors = AppColors()
     @StateObject var tabsViewHelper = TabsUI()
     @State private var loading: Bool = false
     var body: some View {
-        if loading {
-            
-        } else {
-            ZStack {
+        ZStack {
+            if tabsViewHelper.appLoading {
+                InitialLoadingScreen()
+                    .environmentObject(appColors)
+            } else {
                 TabView(selection: $tabsViewHelper.mainTabSelected) {
                     BrowseMainView()
                         .tag(Tab.browse)
+                        .foregroundStyle(appColors.foreground)
+                        .background(appColors.background)
                     CartMainView()
                         .tag(Tab.cart)
                     SettingsMainView()
@@ -35,8 +39,19 @@ struct MainView: View {
                     CustomTabBar(selectedTab: $tabsViewHelper.mainTabSelected)
                         .environmentObject(appColors)
                 }
-                
             }
         }
+        .task {
+            Task {
+                await MainActor.run { tabsViewHelper.appLoading = true }
+                try await Task.sleep(seconds: 5)
+                await MainActor.run { tabsViewHelper.appLoading = false }
+            }
+        }
+        .overlay(
+            VStack {
+                ActivityIndicatorView(isVisible: $tabsViewHelper.appLoading, type: .gradient(appColors.getAll(), .round, lineWidth: 5))
+            }
+        )
     }
 }

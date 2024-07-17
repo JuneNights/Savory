@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00D31B7D2485F4613B82A04E /* Pods_SavoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93198146F329D8E0DAF9F90B /* Pods_SavoryTests.framework */; };
 		6EB9DC3D19FCDAA355A851C6 /* Pods_Savory_SavoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760B11CC35661BE2F10882A2 /* Pods_Savory_SavoryUITests.framework */; };
-		944CB9E366707F1A9263610B /* Pods_Savory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C506A0F35B97A16D0BFDC08F /* Pods_Savory.framework */; };
 		BD3E5A902C454D8B00717A7B /* SavoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E5A8F2C454D8B00717A7B /* SavoryApp.swift */; };
 		BD3E5A962C454D8B00717A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3E5A952C454D8B00717A7B /* Assets.xcassets */; };
 		BD3E5A992C454D8B00717A7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3E5A982C454D8B00717A7B /* Preview Assets.xcassets */; };
@@ -42,6 +41,9 @@
 		BDEB97F02C482260009ACD88 /* SettingsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97EF2C482260009ACD88 /* SettingsMainView.swift */; };
 		BDEB97F22C48226A009ACD88 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97F12C48226A009ACD88 /* ProfileMainView.swift */; };
 		BDEB97F42C482762009ACD88 /* InitialLoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97F32C482762009ACD88 /* InitialLoadingScreen.swift */; };
+		BDEB97F62C482A8C009ACD88 /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97F52C482A8C009ACD88 /* Task+Extensions.swift */; };
+		BDEB97F72C482BBB009ACD88 /* Pods_Savory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C506A0F35B97A16D0BFDC08F /* Pods_Savory.framework */; };
+		BDEB97FB2C482FD7009ACD88 /* BrowseTabEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB97FA2C482FD7009ACD88 /* BrowseTabEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		BDEB97EF2C482260009ACD88 /* SettingsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainView.swift; sourceTree = "<group>"; };
 		BDEB97F12C48226A009ACD88 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		BDEB97F32C482762009ACD88 /* InitialLoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialLoadingScreen.swift; sourceTree = "<group>"; };
+		BDEB97F52C482A8C009ACD88 /* Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
+		BDEB97FA2C482FD7009ACD88 /* BrowseTabEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTabEnums.swift; sourceTree = "<group>"; };
 		C506A0F35B97A16D0BFDC08F /* Pods_Savory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Savory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A05A5BB3F04EAD49C5E22C /* Pods-SavoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryTests.release.xcconfig"; path = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0FA1FF3227937A2EC06CCE0 /* Pods-SavoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryTests.debug.xcconfig"; path = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944CB9E366707F1A9263610B /* Pods_Savory.framework in Frameworks */,
+				BDEB97F72C482BBB009ACD88 /* Pods_Savory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +255,7 @@
 		BD3E5AC12C45555300717A7B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BDEB97FA2C482FD7009ACD88 /* BrowseTabEnums.swift */,
 				BD3E5AE62C455BFC00717A7B /* AppColors.swift */,
 				BD3E5AE12C45583100717A7B /* Extensions */,
 				BD3E5AC22C45556700717A7B /* Fonts */,
@@ -285,6 +290,7 @@
 			children = (
 				BD3E5AE22C45584100717A7B /* Font+Extensions.swift */,
 				BD3E5AE42C455AB200717A7B /* Color+Extensions.swift */,
+				BDEB97F52C482A8C009ACD88 /* Task+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				BD3E5A882C454D8B00717A7B /* Sources */,
 				BD3E5A892C454D8B00717A7B /* Frameworks */,
 				BD3E5A8A2C454D8B00717A7B /* Resources */,
+				0B3140CD2A65B665AC0813AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +355,7 @@
 				BD3E5AA42C454D8C00717A7B /* Sources */,
 				BD3E5AA52C454D8C00717A7B /* Frameworks */,
 				BD3E5AA62C454D8C00717A7B /* Resources */,
+				206974D88194B1A7E1985464 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -444,6 +452,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B3140CD2A65B665AC0813AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savory/Pods-Savory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savory/Pods-Savory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Savory/Pods-Savory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		206974D88194B1A7E1985464 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8A5C918E8A21F05DCB20BE81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,12 +564,14 @@
 				BDEB97EC2C482232009ACD88 /* BrowseMainView.swift in Sources */,
 				BDEB97F22C48226A009ACD88 /* ProfileMainView.swift in Sources */,
 				BDEB97EE2C482253009ACD88 /* CartMainView.swift in Sources */,
+				BDEB97F62C482A8C009ACD88 /* Task+Extensions.swift in Sources */,
 				BDADA29B2C4589F10006121C /* TabsUI.swift in Sources */,
 				BDADA29D2C458A2F0006121C /* CustomTabBar.swift in Sources */,
 				BD3E5AE32C45584100717A7B /* Font+Extensions.swift in Sources */,
 				BD3E5A902C454D8B00717A7B /* SavoryApp.swift in Sources */,
 				BD3E5AE72C455BFC00717A7B /* AppColors.swift in Sources */,
 				BDEB97F02C482260009ACD88 /* SettingsMainView.swift in Sources */,
+				BDEB97FB2C482FD7009ACD88 /* BrowseTabEnums.swift in Sources */,
 				BD3E5AE52C455AB200717A7B /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,7 +646,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -665,7 +709,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -697,6 +741,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Savory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Savory;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -728,6 +773,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Savory/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Savory;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

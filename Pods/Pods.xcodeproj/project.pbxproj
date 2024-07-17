@@ -7,65 +7,175 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		382653DA7F6277671ABEB4E741EE2411 /* Pods-Savory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AABDCB275F7AF7CD089CF2F9B8600FB /* Pods-Savory-dummy.m */; };
-		4093C052580F19E6664725064C64C337 /* Pods-Savory-SavoryUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFD00E6DBD5D6C17899F49AB86C61ED /* Pods-Savory-SavoryUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95DC5A4DD36EE8F4DFC83256BE38C066 /* Pods-Savory-SavoryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0B97B192BB9190D484208F6FA6C7AC /* Pods-Savory-SavoryUITests-dummy.m */; };
-		A6B003295375D5FB94103E28388FCD99 /* Pods-Savory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C790CD3811528BCFBA503140EB506A /* Pods-Savory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9A3F8A9878C6168CBDCF361CF841D9B /* Pods-SavoryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF579FC23E3BDBBD09C5513CEC56288 /* Pods-SavoryTests-dummy.m */; };
-		C444C69554F77AA801B57FE783356EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		01882BBC0EFA6AC1340A1761E0928729 /* ArcsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7767D83E706BBB3CB4138C74B97724C /* ArcsIndicatorView.swift */; };
+		043E85E24C4EBB359929AB8EF28FD2DC /* GrowingArcIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136436CB5417938C99FB5B4118E6989 /* GrowingArcIndicatorView.swift */; };
+		05A5E29DFB4919B3BB354D92C0786D0A /* OpacityDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD500F9102516D425C81A39E09A7D45 /* OpacityDotsIndicatorView.swift */; };
+		17B3A518632B50710DBABDEC090D568B /* EqualizerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4DB75B5DF2FBFED3D0C0120122A520 /* EqualizerIndicatorView.swift */; };
+		3211D0430E5E5E3401ADD451E81271A0 /* ActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D287A297208E5796B4086AD51101A4B /* ActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3531A1BAA860ED8B4EF199748655B139 /* PopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = F03A9027746E32C7F73673578113C4F8 /* PopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41602EF63F87457D4BFD732F06FA8461 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC40DFD4EA27288E38A299BC0C8476AC /* PopupView.swift */; };
+		46293E8F01A1CD2000F1618B856720DE /* DefaultIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B7B7B33A86C9D50267315D6797C78 /* DefaultIndicatorView.swift */; };
+		5D909A8EE0405F237563032F7BD08C6D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8FE659365279C13AC7E5F74A13FD30 /* Utils.swift */; };
+		63E5BAA3BD287596C473078B588D60A3 /* ActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89A7067A923EA4EB1B9D93D3CC6D70 /* ActivityIndicatorView-dummy.m */; };
+		797EB78F4021C5F5B32FD489CECD71C1 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1272E8893838C00033981369F164F80 /* Modifiers.swift */; };
+		8496091858D9D678575DC9A191AA3A3E /* FlickeringDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CE57D5396E98D337D70C15C857E517 /* FlickeringDotsIndicatorView.swift */; };
+		8C1F8D2BC49BF5F2CA131926B4DC2B5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		970DE61AEAA96347D786F9628AE14FF6 /* FullscreenPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073DFFBB1F35035FC7EB54F1B0259AD4 /* FullscreenPopup.swift */; };
+		A4F4F7C7AE5C5BDCA4EC6881E0C289BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A6F12FD1D2CF5215F7908AA8ACAABEE1 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE43D556B418ECF7FD102C4F1475ED /* ActivityIndicatorView.swift */; };
+		A7B0ED9733E45A64EB183EAC7397F14C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A9A3F8A9878C6168CBDCF361CF841D9B /* Pods-SavoryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC9C9AACC7F2E026BA148105591912 /* Pods-SavoryTests-dummy.m */; };
+		AAFD117EE5913BFD61C2774FB57E6922 /* ScalingDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF42D443FC4E17B79E146D3103EE6EA /* ScalingDotsIndicatorView.swift */; };
+		C0CA075E8DDFDB2FE60A75A432B6338F /* ExytePopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49313F0265C23FC7A1C252EF8904B485 /* ExytePopupView-dummy.m */; };
+		CB411E3DA6F8FB2821AADEE75770EEA8 /* ExytePopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F58EB3AE08A366F2ABD72BB292BF4284 /* ExytePopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB847E2F37DE617FCDE79D5F9326E1FC /* Pods-Savory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 383C8C7364DF3D0C641D12D8EB0DC33A /* Pods-Savory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D305D1D04181CC7F6CD223353993D06D /* Pods-Savory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E196CC2535D2CB032BCE851608F92 /* Pods-Savory-dummy.m */; };
+		D59395F4A2E924B6D7F9CC37AEE0AFA6 /* GrowingCircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDB8FD8438ACF499AC706DB88AA53E /* GrowingCircleIndicatorView.swift */; };
+		D87C2F17ABD57BC41D0205A4CC0594D5 /* RotatingDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751162A982CA941167CA6A85C87F7531 /* RotatingDotsIndicatorView.swift */; };
 		DC56E03E27472AA5A87AC008BC708784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F227F958FBE83D19E12CE0F042313081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F90BED49D355F1B1819DC2823B374217 /* Pods-SavoryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2556F3C19A84946A8D3F79FCB56D161 /* Pods-SavoryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6B251AB9544D6266749D95C8ADF618 /* Pods-Savory-SavoryUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D54AF6F168EDE2E29042D601FE207B3F /* Pods-Savory-SavoryUITests-dummy.m */; };
+		E9E47180917EDA3AF6CE14BC843D7879 /* GradientIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460149184968521061B3E54F5C32F8CA /* GradientIndicatorView.swift */; };
+		EFAEEF4A7A905A059C8C8B2C447248AA /* Pods-Savory-SavoryUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3B8229CBA29CE487B2D9F2243069E3 /* Pods-Savory-SavoryUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F81711F48B1374CAB8C70B2885C05CD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F90BED49D355F1B1819DC2823B374217 /* Pods-SavoryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DF78E182C2FD95C3FF9F88E3FC38E4 /* Pods-SavoryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC89CAEC2F7EBC897B1485B1CE617C2 /* ActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E9DC4BEBDBCFACBD518B98B3AEA38A /* ActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B4E4B3CC0E4BCFF6BD0DE6561BB12E44 /* PBXContainerItemProxy */ = {
+		0D47F1EF5B907B440FC0A269B86200E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8110BD3DF03DA7EC9063B1E5C18AB07;
+			remoteInfo = ActivityIndicatorView;
+		};
+		42F03F5A615395781CDE7EAC4E519584 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33D7CAC6474A19A50E5B7445454CA0CA;
 			remoteInfo = "Pods-Savory";
 		};
+		A1241BE959161A65A459B03B317AAB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3BF7971BE024EA2CBC58C6A22E7F7CD;
+			remoteInfo = ExytePopupView;
+		};
+		D4C5F98FBF7AE3601FDABB68BACE707C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8110BD3DF03DA7EC9063B1E5C18AB07;
+			remoteInfo = ActivityIndicatorView;
+		};
+		E58AD7809846422CD0780544D6827F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3BF7971BE024EA2CBC58C6A22E7F7CD;
+			remoteInfo = ExytePopupView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002AF8F7525CF2BE77E6886142C0A49C /* Pods-SavoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SavoryTests.release.xcconfig"; sourceTree = "<group>"; };
-		088A59928BF833B2ABA79719154C113B /* Pods-Savory-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-Info.plist"; sourceTree = "<group>"; };
-		0B0B97B192BB9190D484208F6FA6C7AC /* Pods-Savory-SavoryUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Savory-SavoryUITests-dummy.m"; sourceTree = "<group>"; };
-		0CFD00E6DBD5D6C17899F49AB86C61ED /* Pods-Savory-SavoryUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Savory-SavoryUITests-umbrella.h"; sourceTree = "<group>"; };
-		1A9591281C23D719A483B0E202F24BFB /* Pods-Savory-SavoryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-SavoryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		07392D904A961746CCE7E4680F1F93D5 /* ActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		073DFFBB1F35035FC7EB54F1B0259AD4 /* FullscreenPopup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullscreenPopup.swift; path = Source/FullscreenPopup.swift; sourceTree = "<group>"; };
+		13C103468203E30E55A714910B127E26 /* Pods-SavoryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SavoryTests.modulemap"; sourceTree = "<group>"; };
+		1C3C05FE5286E19BB0DA91158DAB9BC9 /* Pods-Savory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory.release.xcconfig"; sourceTree = "<group>"; };
+		2CFE2ECAED6C3450ADB0E8F9D5A71E7B /* Pods-Savory-SavoryUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-SavoryUITests-Info.plist"; sourceTree = "<group>"; };
+		34105F00EA410C1832B65754F5BCECF6 /* Pods-Savory-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-Info.plist"; sourceTree = "<group>"; };
 		34F0532527AE832F3910C58E9D4D46E6 /* Pods-Savory */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Savory"; path = Pods_Savory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5376B58924045C03C16CE497D46243AB /* Pods-Savory-SavoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory-SavoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5AABDCB275F7AF7CD089CF2F9B8600FB /* Pods-Savory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Savory-dummy.m"; sourceTree = "<group>"; };
-		5BF579FC23E3BDBBD09C5513CEC56288 /* Pods-SavoryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SavoryTests-dummy.m"; sourceTree = "<group>"; };
-		6A5916FADE75C24409A7A35C7CE089FD /* Pods-SavoryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SavoryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		383C8C7364DF3D0C641D12D8EB0DC33A /* Pods-Savory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Savory-umbrella.h"; sourceTree = "<group>"; };
+		3ECBAE90A36F0B5BEEB3DA53D637976E /* Pods-Savory-SavoryUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Savory-SavoryUITests.modulemap"; sourceTree = "<group>"; };
+		3F89A7067A923EA4EB1B9D93D3CC6D70 /* ActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		42AD3057D96D0B75F7304470A4E4B567 /* Pods-Savory-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Savory-frameworks.sh"; sourceTree = "<group>"; };
+		460149184968521061B3E54F5C32F8CA /* GradientIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientIndicatorView.swift; path = Source/Indicators/GradientIndicatorView.swift; sourceTree = "<group>"; };
+		46DD59DE759324C7920A8447CD4B0D72 /* ExytePopupView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExytePopupView; path = ExytePopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49313F0265C23FC7A1C252EF8904B485 /* ExytePopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExytePopupView-dummy.m"; sourceTree = "<group>"; };
+		4CD805A05CDA8033D8D440F3BE741B7F /* ExytePopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExytePopupView-prefix.pch"; sourceTree = "<group>"; };
+		4E2073AA5E078A3327E27EC5152E6DC3 /* Pods-SavoryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SavoryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		53FED806147B1565358E9B62B68AA5BE /* ExytePopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExytePopupView.debug.xcconfig; sourceTree = "<group>"; };
+		5E4D32E5AD7002EE452D2CEAEB4287DF /* ExytePopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ExytePopupView.modulemap; sourceTree = "<group>"; };
+		62D344463A9518BACCB21D62DF13EC81 /* Pods-Savory-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-acknowledgements.plist"; sourceTree = "<group>"; };
+		7084B3DE816C59773F8315D6598869DC /* Pods-Savory-SavoryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-SavoryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B1A7D87781ED86F84565DCCF6BBF798 /* Pods-Savory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Savory.modulemap"; sourceTree = "<group>"; };
-		7BC254A1BB6E89BB81DAE92BA0D17BF5 /* Pods-Savory-SavoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory-SavoryUITests.release.xcconfig"; sourceTree = "<group>"; };
-		95950FCBB31CC16232A124474FBF2384 /* Pods-Savory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory.release.xcconfig"; sourceTree = "<group>"; };
-		97986116981EE1E94A22EE43E875D01D /* Pods-SavoryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SavoryTests.modulemap"; sourceTree = "<group>"; };
+		747E196CC2535D2CB032BCE851608F92 /* Pods-Savory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Savory-dummy.m"; sourceTree = "<group>"; };
+		751162A982CA941167CA6A85C87F7531 /* RotatingDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatingDotsIndicatorView.swift; path = Source/Indicators/RotatingDotsIndicatorView.swift; sourceTree = "<group>"; };
+		75A4A96585FC99FDF321B226DD5DEFED /* Pods-Savory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory.debug.xcconfig"; sourceTree = "<group>"; };
+		7BC55C2A0AB48D62D9BA375C7268CE49 /* ActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
+		7DF42D443FC4E17B79E146D3103EE6EA /* ScalingDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingDotsIndicatorView.swift; path = Source/Indicators/ScalingDotsIndicatorView.swift; sourceTree = "<group>"; };
+		82EDDFC99DE90AA0F8B23C748B8E2C99 /* Pods-SavoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SavoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84DF78E182C2FD95C3FF9F88E3FC38E4 /* Pods-SavoryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SavoryTests-umbrella.h"; sourceTree = "<group>"; };
+		8D287A297208E5796B4086AD51101A4B /* ActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		8D7A6953C95692F0E2077EE9C4D799A4 /* Pods-Savory-SavoryUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Savory-SavoryUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8DD500F9102516D425C81A39E09A7D45 /* OpacityDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityDotsIndicatorView.swift; path = Source/Indicators/OpacityDotsIndicatorView.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DB31E98C5BFDA5E9919E29C118D9439 /* Pods-SavoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SavoryTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A103B2EBD46532818ED86EA8152AF12C /* Pods-Savory-SavoryUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Savory-SavoryUITests.modulemap"; sourceTree = "<group>"; };
+		9F8FE659365279C13AC7E5F74A13FD30 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Source/Utils.swift; sourceTree = "<group>"; };
+		A136436CB5417938C99FB5B4118E6989 /* GrowingArcIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingArcIndicatorView.swift; path = Source/Indicators/GrowingArcIndicatorView.swift; sourceTree = "<group>"; };
+		A7767D83E706BBB3CB4138C74B97724C /* ArcsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArcsIndicatorView.swift; path = Source/Indicators/ArcsIndicatorView.swift; sourceTree = "<group>"; };
 		A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Savory-SavoryUITests"; path = Pods_Savory_SavoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA232C7FD245DEA14A9D6D3243D3771D /* Pods-SavoryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SavoryTests-Info.plist"; sourceTree = "<group>"; };
+		ADBA2BE9BC82DC7977E4880EF6E839C6 /* ActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		AF788BA974E39E954535CEE62F161AE7 /* Pods-Savory-SavoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory-SavoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B15273E89CABFC9760EBFFBEF4C5BD45 /* Pods-SavoryTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SavoryTests"; path = Pods_SavoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B96DB9C83E52A3C7162E364595F3C751 /* Pods-SavoryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SavoryTests-Info.plist"; sourceTree = "<group>"; };
-		C0D17770A78A8F960A2BA74C9A7C5F3A /* Pods-Savory-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-acknowledgements.plist"; sourceTree = "<group>"; };
-		C89C25181C481DDEE062F6BD81059616 /* Pods-SavoryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SavoryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D440AE49826F9EB6732BEC90C3A3B106 /* Pods-Savory-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Savory-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D8C790CD3811528BCFBA503140EB506A /* Pods-Savory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Savory-umbrella.h"; sourceTree = "<group>"; };
-		DAA5FB26048A405B762892CC19C1537E /* Pods-Savory-SavoryUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Savory-SavoryUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2556F3C19A84946A8D3F79FCB56D161 /* Pods-SavoryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SavoryTests-umbrella.h"; sourceTree = "<group>"; };
-		EE54225BC953F39338AC6529F3D051EC /* Pods-Savory-SavoryUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Savory-SavoryUITests-Info.plist"; sourceTree = "<group>"; };
-		FD2B401922624104F854A0216E8E530A /* Pods-Savory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory.debug.xcconfig"; sourceTree = "<group>"; };
+		B15EA8B1A4C3369DD457DDDF2D3EE663 /* ExytePopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ExytePopupView-Info.plist"; sourceTree = "<group>"; };
+		B3CE57D5396E98D337D70C15C857E517 /* FlickeringDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlickeringDotsIndicatorView.swift; path = Source/Indicators/FlickeringDotsIndicatorView.swift; sourceTree = "<group>"; };
+		C5BC9C9AACC7F2E026BA148105591912 /* Pods-SavoryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SavoryTests-dummy.m"; sourceTree = "<group>"; };
+		D425168AB0219DD6B2594BEDB05C9A28 /* ActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		D4D604F3EFB64FB39924063CCCC91E18 /* Pods-Savory-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Savory-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D54AF6F168EDE2E29042D601FE207B3F /* Pods-Savory-SavoryUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Savory-SavoryUITests-dummy.m"; sourceTree = "<group>"; };
+		D8CCBFC89BA68A8D1E9E07FAC25A1C7A /* Pods-SavoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SavoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC40DFD4EA27288E38A299BC0C8476AC /* PopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = Source/PopupView.swift; sourceTree = "<group>"; };
+		DD8B7B7B33A86C9D50267315D6797C78 /* DefaultIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIndicatorView.swift; path = Source/Indicators/DefaultIndicatorView.swift; sourceTree = "<group>"; };
+		DF3B8229CBA29CE487B2D9F2243069E3 /* Pods-Savory-SavoryUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Savory-SavoryUITests-umbrella.h"; sourceTree = "<group>"; };
+		E0A2750282B4CAFC01D95BAD1F918C07 /* ExytePopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExytePopupView.release.xcconfig; sourceTree = "<group>"; };
+		E38C46596A7BA8AF58D81EBC139B4B6F /* ActivityIndicatorView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ActivityIndicatorView; path = ActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E9DC4BEBDBCFACBD518B98B3AEA38A /* ActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActivityIndicatorView.h; path = Source/ActivityIndicatorView.h; sourceTree = "<group>"; };
+		EEBDB8FD8438ACF499AC706DB88AA53E /* GrowingCircleIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingCircleIndicatorView.swift; path = Source/Indicators/GrowingCircleIndicatorView.swift; sourceTree = "<group>"; };
+		EFAE43D556B418ECF7FD102C4F1475ED /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorView.swift; path = Source/ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		F03A9027746E32C7F73673578113C4F8 /* PopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PopupView.h; path = Source/PopupView.h; sourceTree = "<group>"; };
+		F0799669F04FCE3AF58714AD2F4FAAEE /* Pods-Savory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Savory.modulemap"; sourceTree = "<group>"; };
+		F1272E8893838C00033981369F164F80 /* Modifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Modifiers.swift; path = Source/Modifiers.swift; sourceTree = "<group>"; };
+		F2E852BF781858C8F483BAC0CA16E170 /* ActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		F58EB3AE08A366F2ABD72BB292BF4284 /* ExytePopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExytePopupView-umbrella.h"; sourceTree = "<group>"; };
+		F7FCAF64D70E02C52891C5E18462D863 /* Pods-SavoryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SavoryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F98C9F536D760C4A186F99FC22F7AC25 /* Pods-Savory-SavoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Savory-SavoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA4DB75B5DF2FBFED3D0C0120122A520 /* EqualizerIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EqualizerIndicatorView.swift; path = Source/Indicators/EqualizerIndicatorView.swift; sourceTree = "<group>"; };
+		FB5552694DE544D3948BC3B3B4A4350B /* Pods-Savory-SavoryUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Savory-SavoryUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		548F0C4E3F0256688406AD7B78DE0DCA /* Frameworks */ = {
+		14B6EB94AE01BAB0B6391991F4178BDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C444C69554F77AA801B57FE783356EC1 /* Foundation.framework in Frameworks */,
+				A7B0ED9733E45A64EB183EAC7397F14C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F82A9B47B17B87B8F7D4D60A94BA4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81711F48B1374CAB8C70B2885C05CD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66A2246828C19E325D3E05759C4BE763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F4F7C7AE5C5BDCA4EC6881E0C289BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8185095D75FD215549EC397B57192814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1F8D2BC49BF5F2CA131926B4DC2B5C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,41 +187,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4B00AA732477545C51D367612E2A618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F227F958FBE83D19E12CE0F042313081 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0597F4CEDB3491F8767567BACFC0836C /* Pods-Savory */ = {
+		304936CA7866C7EA5D5B24EA1D36D4C4 /* Pods-Savory */ = {
 			isa = PBXGroup;
 			children = (
-				7B1A7D87781ED86F84565DCCF6BBF798 /* Pods-Savory.modulemap */,
-				D440AE49826F9EB6732BEC90C3A3B106 /* Pods-Savory-acknowledgements.markdown */,
-				C0D17770A78A8F960A2BA74C9A7C5F3A /* Pods-Savory-acknowledgements.plist */,
-				5AABDCB275F7AF7CD089CF2F9B8600FB /* Pods-Savory-dummy.m */,
-				088A59928BF833B2ABA79719154C113B /* Pods-Savory-Info.plist */,
-				D8C790CD3811528BCFBA503140EB506A /* Pods-Savory-umbrella.h */,
-				FD2B401922624104F854A0216E8E530A /* Pods-Savory.debug.xcconfig */,
-				95950FCBB31CC16232A124474FBF2384 /* Pods-Savory.release.xcconfig */,
+				F0799669F04FCE3AF58714AD2F4FAAEE /* Pods-Savory.modulemap */,
+				D4D604F3EFB64FB39924063CCCC91E18 /* Pods-Savory-acknowledgements.markdown */,
+				62D344463A9518BACCB21D62DF13EC81 /* Pods-Savory-acknowledgements.plist */,
+				747E196CC2535D2CB032BCE851608F92 /* Pods-Savory-dummy.m */,
+				42AD3057D96D0B75F7304470A4E4B567 /* Pods-Savory-frameworks.sh */,
+				34105F00EA410C1832B65754F5BCECF6 /* Pods-Savory-Info.plist */,
+				383C8C7364DF3D0C641D12D8EB0DC33A /* Pods-Savory-umbrella.h */,
+				75A4A96585FC99FDF321B226DD5DEFED /* Pods-Savory.debug.xcconfig */,
+				1C3C05FE5286E19BB0DA91158DAB9BC9 /* Pods-Savory.release.xcconfig */,
 			);
 			name = "Pods-Savory";
 			path = "Target Support Files/Pods-Savory";
 			sourceTree = "<group>";
 		};
-		1F6C128E807BD5A68E0D541902482017 /* Products */ = {
+		3EF5286E8E80AE9CBBE3FA1D98CE89AE /* ExytePopupView */ = {
 			isa = PBXGroup;
 			children = (
-				34F0532527AE832F3910C58E9D4D46E6 /* Pods-Savory */,
-				A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */,
-				B15273E89CABFC9760EBFFBEF4C5BD45 /* Pods-SavoryTests */,
+				073DFFBB1F35035FC7EB54F1B0259AD4 /* FullscreenPopup.swift */,
+				F1272E8893838C00033981369F164F80 /* Modifiers.swift */,
+				F03A9027746E32C7F73673578113C4F8 /* PopupView.h */,
+				DC40DFD4EA27288E38A299BC0C8476AC /* PopupView.swift */,
+				9F8FE659365279C13AC7E5F74A13FD30 /* Utils.swift */,
+				79F1AD56AA43F064BFFAEE9688A7CA31 /* Support Files */,
 			);
-			name = Products;
+			name = ExytePopupView;
+			path = ExytePopupView;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -122,30 +229,76 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6124E9D4C29EAE22A1BC1E35AFA724D4 /* Pods-Savory-SavoryUITests */ = {
+		6116F7970EBCED3616574EA48D2FB1A1 /* Pods-SavoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				A103B2EBD46532818ED86EA8152AF12C /* Pods-Savory-SavoryUITests.modulemap */,
-				DAA5FB26048A405B762892CC19C1537E /* Pods-Savory-SavoryUITests-acknowledgements.markdown */,
-				1A9591281C23D719A483B0E202F24BFB /* Pods-Savory-SavoryUITests-acknowledgements.plist */,
-				0B0B97B192BB9190D484208F6FA6C7AC /* Pods-Savory-SavoryUITests-dummy.m */,
-				EE54225BC953F39338AC6529F3D051EC /* Pods-Savory-SavoryUITests-Info.plist */,
-				0CFD00E6DBD5D6C17899F49AB86C61ED /* Pods-Savory-SavoryUITests-umbrella.h */,
-				5376B58924045C03C16CE497D46243AB /* Pods-Savory-SavoryUITests.debug.xcconfig */,
-				7BC254A1BB6E89BB81DAE92BA0D17BF5 /* Pods-Savory-SavoryUITests.release.xcconfig */,
+				13C103468203E30E55A714910B127E26 /* Pods-SavoryTests.modulemap */,
+				4E2073AA5E078A3327E27EC5152E6DC3 /* Pods-SavoryTests-acknowledgements.markdown */,
+				F7FCAF64D70E02C52891C5E18462D863 /* Pods-SavoryTests-acknowledgements.plist */,
+				C5BC9C9AACC7F2E026BA148105591912 /* Pods-SavoryTests-dummy.m */,
+				AA232C7FD245DEA14A9D6D3243D3771D /* Pods-SavoryTests-Info.plist */,
+				84DF78E182C2FD95C3FF9F88E3FC38E4 /* Pods-SavoryTests-umbrella.h */,
+				82EDDFC99DE90AA0F8B23C748B8E2C99 /* Pods-SavoryTests.debug.xcconfig */,
+				D8CCBFC89BA68A8D1E9E07FAC25A1C7A /* Pods-SavoryTests.release.xcconfig */,
+			);
+			name = "Pods-SavoryTests";
+			path = "Target Support Files/Pods-SavoryTests";
+			sourceTree = "<group>";
+		};
+		79F1AD56AA43F064BFFAEE9688A7CA31 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D32E5AD7002EE452D2CEAEB4287DF /* ExytePopupView.modulemap */,
+				49313F0265C23FC7A1C252EF8904B485 /* ExytePopupView-dummy.m */,
+				B15EA8B1A4C3369DD457DDDF2D3EE663 /* ExytePopupView-Info.plist */,
+				4CD805A05CDA8033D8D440F3BE741B7F /* ExytePopupView-prefix.pch */,
+				F58EB3AE08A366F2ABD72BB292BF4284 /* ExytePopupView-umbrella.h */,
+				53FED806147B1565358E9B62B68AA5BE /* ExytePopupView.debug.xcconfig */,
+				E0A2750282B4CAFC01D95BAD1F918C07 /* ExytePopupView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ExytePopupView";
+			sourceTree = "<group>";
+		};
+		87360F9FC1E637AEDDDCBE7188F2DF2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1EAC01524B475809F058C254189D5C5 /* ActivityIndicatorView */,
+				3EF5286E8E80AE9CBBE3FA1D98CE89AE /* ExytePopupView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88D7D8B0C34B8F49EB7F227FEE2877F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07392D904A961746CCE7E4680F1F93D5 /* ActivityIndicatorView.modulemap */,
+				3F89A7067A923EA4EB1B9D93D3CC6D70 /* ActivityIndicatorView-dummy.m */,
+				ADBA2BE9BC82DC7977E4880EF6E839C6 /* ActivityIndicatorView-Info.plist */,
+				D425168AB0219DD6B2594BEDB05C9A28 /* ActivityIndicatorView-prefix.pch */,
+				8D287A297208E5796B4086AD51101A4B /* ActivityIndicatorView-umbrella.h */,
+				7BC55C2A0AB48D62D9BA375C7268CE49 /* ActivityIndicatorView.debug.xcconfig */,
+				F2E852BF781858C8F483BAC0CA16E170 /* ActivityIndicatorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		C938A04AACB66D9DADC34C314BF8050A /* Pods-Savory-SavoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3ECBAE90A36F0B5BEEB3DA53D637976E /* Pods-Savory-SavoryUITests.modulemap */,
+				FB5552694DE544D3948BC3B3B4A4350B /* Pods-Savory-SavoryUITests-acknowledgements.markdown */,
+				7084B3DE816C59773F8315D6598869DC /* Pods-Savory-SavoryUITests-acknowledgements.plist */,
+				D54AF6F168EDE2E29042D601FE207B3F /* Pods-Savory-SavoryUITests-dummy.m */,
+				8D7A6953C95692F0E2077EE9C4D799A4 /* Pods-Savory-SavoryUITests-frameworks.sh */,
+				2CFE2ECAED6C3450ADB0E8F9D5A71E7B /* Pods-Savory-SavoryUITests-Info.plist */,
+				DF3B8229CBA29CE487B2D9F2243069E3 /* Pods-Savory-SavoryUITests-umbrella.h */,
+				AF788BA974E39E954535CEE62F161AE7 /* Pods-Savory-SavoryUITests.debug.xcconfig */,
+				F98C9F536D760C4A186F99FC22F7AC25 /* Pods-Savory-SavoryUITests.release.xcconfig */,
 			);
 			name = "Pods-Savory-SavoryUITests";
 			path = "Target Support Files/Pods-Savory-SavoryUITests";
-			sourceTree = "<group>";
-		};
-		7BF49BC8413FC93A140F7A5C93499960 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0597F4CEDB3491F8767567BACFC0836C /* Pods-Savory */,
-				6124E9D4C29EAE22A1BC1E35AFA724D4 /* Pods-Savory-SavoryUITests */,
-				F3C15E0183865CD6A09DB115168D7033 /* Pods-SavoryTests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -153,8 +306,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1F6C128E807BD5A68E0D541902482017 /* Products */,
-				7BF49BC8413FC93A140F7A5C93499960 /* Targets Support Files */,
+				87360F9FC1E637AEDDDCBE7188F2DF2E /* Pods */,
+				F41EB84D3AD19A4D6AAA2406D454832A /* Products */,
+				FC86B08643F9611D6F8742CB4B613F3D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,30 +320,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3C15E0183865CD6A09DB115168D7033 /* Pods-SavoryTests */ = {
+		F1EAC01524B475809F058C254189D5C5 /* ActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				97986116981EE1E94A22EE43E875D01D /* Pods-SavoryTests.modulemap */,
-				C89C25181C481DDEE062F6BD81059616 /* Pods-SavoryTests-acknowledgements.markdown */,
-				6A5916FADE75C24409A7A35C7CE089FD /* Pods-SavoryTests-acknowledgements.plist */,
-				5BF579FC23E3BDBBD09C5513CEC56288 /* Pods-SavoryTests-dummy.m */,
-				B96DB9C83E52A3C7162E364595F3C751 /* Pods-SavoryTests-Info.plist */,
-				E2556F3C19A84946A8D3F79FCB56D161 /* Pods-SavoryTests-umbrella.h */,
-				9DB31E98C5BFDA5E9919E29C118D9439 /* Pods-SavoryTests.debug.xcconfig */,
-				002AF8F7525CF2BE77E6886142C0A49C /* Pods-SavoryTests.release.xcconfig */,
+				E6E9DC4BEBDBCFACBD518B98B3AEA38A /* ActivityIndicatorView.h */,
+				EFAE43D556B418ECF7FD102C4F1475ED /* ActivityIndicatorView.swift */,
+				A7767D83E706BBB3CB4138C74B97724C /* ArcsIndicatorView.swift */,
+				DD8B7B7B33A86C9D50267315D6797C78 /* DefaultIndicatorView.swift */,
+				FA4DB75B5DF2FBFED3D0C0120122A520 /* EqualizerIndicatorView.swift */,
+				B3CE57D5396E98D337D70C15C857E517 /* FlickeringDotsIndicatorView.swift */,
+				460149184968521061B3E54F5C32F8CA /* GradientIndicatorView.swift */,
+				A136436CB5417938C99FB5B4118E6989 /* GrowingArcIndicatorView.swift */,
+				EEBDB8FD8438ACF499AC706DB88AA53E /* GrowingCircleIndicatorView.swift */,
+				8DD500F9102516D425C81A39E09A7D45 /* OpacityDotsIndicatorView.swift */,
+				751162A982CA941167CA6A85C87F7531 /* RotatingDotsIndicatorView.swift */,
+				7DF42D443FC4E17B79E146D3103EE6EA /* ScalingDotsIndicatorView.swift */,
+				88D7D8B0C34B8F49EB7F227FEE2877F4 /* Support Files */,
 			);
-			name = "Pods-SavoryTests";
-			path = "Target Support Files/Pods-SavoryTests";
+			name = ActivityIndicatorView;
+			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		F41EB84D3AD19A4D6AAA2406D454832A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38C46596A7BA8AF58D81EBC139B4B6F /* ActivityIndicatorView */,
+				46DD59DE759324C7920A8447CD4B0D72 /* ExytePopupView */,
+				34F0532527AE832F3910C58E9D4D46E6 /* Pods-Savory */,
+				A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */,
+				B15273E89CABFC9760EBFFBEF4C5BD45 /* Pods-SavoryTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC86B08643F9611D6F8742CB4B613F3D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				304936CA7866C7EA5D5B24EA1D36D4C4 /* Pods-Savory */,
+				C938A04AACB66D9DADC34C314BF8050A /* Pods-Savory-SavoryUITests */,
+				6116F7970EBCED3616574EA48D2FB1A1 /* Pods-SavoryTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E847D080C7F982579CACAFB41C0B8D8 /* Headers */ = {
+		3CD520C5F61866C3175AF58EED578F9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6B003295375D5FB94103E28388FCD99 /* Pods-Savory-umbrella.h in Headers */,
+				EFAEEF4A7A905A059C8C8B2C447248AA /* Pods-Savory-SavoryUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E59A5F72F4F5DF6A0E970A53DFC739D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB411E3DA6F8FB2821AADEE75770EEA8 /* ExytePopupView-umbrella.h in Headers */,
+				3531A1BAA860ED8B4EF199748655B139 /* PopupView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5703973EA0667467109130BCF110EE35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB847E2F37DE617FCDE79D5F9326E1FC /* Pods-Savory-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,11 +399,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9127EA0F07BB73163FF522190BA18F1C /* Headers */ = {
+		B90712CAF9A62B2B68DA4694832722B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4093C052580F19E6664725064C64C337 /* Pods-Savory-SavoryUITests-umbrella.h in Headers */,
+				FDC89CAEC2F7EBC897B1485B1CE617C2 /* ActivityIndicatorView.h in Headers */,
+				3211D0430E5E5E3401ADD451E81271A0 /* ActivityIndicatorView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,16 +413,18 @@
 /* Begin PBXNativeTarget section */
 		33D7CAC6474A19A50E5B7445454CA0CA /* Pods-Savory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 038FF00F9286B74D7622C7B651AB5433 /* Build configuration list for PBXNativeTarget "Pods-Savory" */;
+			buildConfigurationList = EFDC3E38FF19BDDE0BCF5D338636E200 /* Build configuration list for PBXNativeTarget "Pods-Savory" */;
 			buildPhases = (
-				3E847D080C7F982579CACAFB41C0B8D8 /* Headers */,
-				60D01C95E01FA2D6EDA5E83B08898CBA /* Sources */,
-				C4B00AA732477545C51D367612E2A618 /* Frameworks */,
-				EEC61DD5D4D4DBBBFE736454EE3A239F /* Resources */,
+				5703973EA0667467109130BCF110EE35 /* Headers */,
+				93793E691DC85DCB58903DA0809EBF99 /* Sources */,
+				8185095D75FD215549EC397B57192814 /* Frameworks */,
+				49C757D667BAE6FE33F3569E7659A933 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7A1FF22EB6FF858E3E138A89DDBC0CA7 /* PBXTargetDependency */,
+				6C63F68DB02DB5C6588E51792C838D14 /* PBXTargetDependency */,
 			);
 			name = "Pods-Savory";
 			productName = Pods_Savory;
@@ -242,7 +443,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DF68519E1C10BB5DFD70611281CDC3F5 /* PBXTargetDependency */,
+				C72C5E3AEDA3D80414CED563ED1B2FD9 /* PBXTargetDependency */,
 			);
 			name = "Pods-SavoryTests";
 			productName = Pods_SavoryTests;
@@ -251,20 +452,58 @@
 		};
 		978448148F44EEAB6751A80B37118156 /* Pods-Savory-SavoryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FC869565C64231A0FB62524F442373E /* Build configuration list for PBXNativeTarget "Pods-Savory-SavoryUITests" */;
+			buildConfigurationList = 357384B13946065E38539B70C57FEB89 /* Build configuration list for PBXNativeTarget "Pods-Savory-SavoryUITests" */;
 			buildPhases = (
-				9127EA0F07BB73163FF522190BA18F1C /* Headers */,
-				BFC9D04DFBFED4ED9C090171920ABB5C /* Sources */,
-				548F0C4E3F0256688406AD7B78DE0DCA /* Frameworks */,
-				8732CCAB3D6AA31375BBDF10D399760A /* Resources */,
+				3CD520C5F61866C3175AF58EED578F9B /* Headers */,
+				666D77B86B26529884032394FCF5FC88 /* Sources */,
+				4F82A9B47B17B87B8F7D4D60A94BA4FA /* Frameworks */,
+				A472B35A48D8AF5478A3AF67468A2BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167BA0AA5DA6B42895564AE94DB31229 /* PBXTargetDependency */,
+				E1C44C569D20FD809AA6710B8F3F9D69 /* PBXTargetDependency */,
+			);
+			name = "Pods-Savory-SavoryUITests";
+			productName = Pods_Savory_SavoryUITests;
+			productReference = A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A849A8B66179B81EC3788604DEC15E /* Build configuration list for PBXNativeTarget "ActivityIndicatorView" */;
+			buildPhases = (
+				B90712CAF9A62B2B68DA4694832722B0 /* Headers */,
+				A558DA5FB01444482BD98BCC26BEEF0D /* Sources */,
+				66A2246828C19E325D3E05759C4BE763 /* Frameworks */,
+				19CFFA27C3D9397471A4B5A811ACFDDC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Savory-SavoryUITests";
-			productName = Pods_Savory_SavoryUITests;
-			productReference = A98815D32C52453AA7A89CC480FD0969 /* Pods-Savory-SavoryUITests */;
+			name = ActivityIndicatorView;
+			productName = ActivityIndicatorView;
+			productReference = E38C46596A7BA8AF58D81EBC139B4B6F /* ActivityIndicatorView */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C83296CEB95300D081372BEBCD99FA /* Build configuration list for PBXNativeTarget "ExytePopupView" */;
+			buildPhases = (
+				3E59A5F72F4F5DF6A0E970A53DFC739D /* Headers */,
+				91B1427256FC8FE18D62599E8217A09C /* Sources */,
+				14B6EB94AE01BAB0B6391991F4178BDC /* Frameworks */,
+				0F3BE01B51749011013ACDB7D00D820B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExytePopupView;
+			productName = ExytePopupView;
+			productReference = 46DD59DE759324C7920A8447CD4B0D72 /* ExytePopupView */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,10 +524,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1F6C128E807BD5A68E0D541902482017 /* Products */;
+			productRefGroup = F41EB84D3AD19A4D6AAA2406D454832A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */,
+				E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */,
 				33D7CAC6474A19A50E5B7445454CA0CA /* Pods-Savory */,
 				978448148F44EEAB6751A80B37118156 /* Pods-Savory-SavoryUITests */,
 				49E5CC3A91D333E7FDB0863B066EA0D9 /* Pods-SavoryTests */,
@@ -297,7 +538,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8732CCAB3D6AA31375BBDF10D399760A /* Resources */ = {
+		0F3BE01B51749011013ACDB7D00D820B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CFFA27C3D9397471A4B5A811ACFDDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C757D667BAE6FE33F3569E7659A933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A472B35A48D8AF5478A3AF67468A2BC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,24 +573,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEC61DD5D4D4DBBBFE736454EE3A239F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		60D01C95E01FA2D6EDA5E83B08898CBA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				382653DA7F6277671ABEB4E741EE2411 /* Pods-Savory-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		64CD943937E81C495147A9D3666CC701 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,91 +584,127 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFC9D04DFBFED4ED9C090171920ABB5C /* Sources */ = {
+		666D77B86B26529884032394FCF5FC88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95DC5A4DD36EE8F4DFC83256BE38C066 /* Pods-Savory-SavoryUITests-dummy.m in Sources */,
+				DD6B251AB9544D6266749D95C8ADF618 /* Pods-Savory-SavoryUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B1427256FC8FE18D62599E8217A09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0CA075E8DDFDB2FE60A75A432B6338F /* ExytePopupView-dummy.m in Sources */,
+				970DE61AEAA96347D786F9628AE14FF6 /* FullscreenPopup.swift in Sources */,
+				797EB78F4021C5F5B32FD489CECD71C1 /* Modifiers.swift in Sources */,
+				41602EF63F87457D4BFD732F06FA8461 /* PopupView.swift in Sources */,
+				5D909A8EE0405F237563032F7BD08C6D /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93793E691DC85DCB58903DA0809EBF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D305D1D04181CC7F6CD223353993D06D /* Pods-Savory-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A558DA5FB01444482BD98BCC26BEEF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F12FD1D2CF5215F7908AA8ACAABEE1 /* ActivityIndicatorView.swift in Sources */,
+				63E5BAA3BD287596C473078B588D60A3 /* ActivityIndicatorView-dummy.m in Sources */,
+				01882BBC0EFA6AC1340A1761E0928729 /* ArcsIndicatorView.swift in Sources */,
+				46293E8F01A1CD2000F1618B856720DE /* DefaultIndicatorView.swift in Sources */,
+				17B3A518632B50710DBABDEC090D568B /* EqualizerIndicatorView.swift in Sources */,
+				8496091858D9D678575DC9A191AA3A3E /* FlickeringDotsIndicatorView.swift in Sources */,
+				E9E47180917EDA3AF6CE14BC843D7879 /* GradientIndicatorView.swift in Sources */,
+				043E85E24C4EBB359929AB8EF28FD2DC /* GrowingArcIndicatorView.swift in Sources */,
+				D59395F4A2E924B6D7F9CC37AEE0AFA6 /* GrowingCircleIndicatorView.swift in Sources */,
+				05A5E29DFB4919B3BB354D92C0786D0A /* OpacityDotsIndicatorView.swift in Sources */,
+				D87C2F17ABD57BC41D0205A4CC0594D5 /* RotatingDotsIndicatorView.swift in Sources */,
+				AAFD117EE5913BFD61C2774FB57E6922 /* ScalingDotsIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DF68519E1C10BB5DFD70611281CDC3F5 /* PBXTargetDependency */ = {
+		167BA0AA5DA6B42895564AE94DB31229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivityIndicatorView;
+			target = D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */;
+			targetProxy = 0D47F1EF5B907B440FC0A269B86200E5 /* PBXContainerItemProxy */;
+		};
+		6C63F68DB02DB5C6588E51792C838D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ExytePopupView;
+			target = E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */;
+			targetProxy = A1241BE959161A65A459B03B317AAB0F /* PBXContainerItemProxy */;
+		};
+		7A1FF22EB6FF858E3E138A89DDBC0CA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivityIndicatorView;
+			target = D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */;
+			targetProxy = D4C5F98FBF7AE3601FDABB68BACE707C /* PBXContainerItemProxy */;
+		};
+		C72C5E3AEDA3D80414CED563ED1B2FD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Savory";
 			target = 33D7CAC6474A19A50E5B7445454CA0CA /* Pods-Savory */;
-			targetProxy = B4E4B3CC0E4BCFF6BD0DE6561BB12E44 /* PBXContainerItemProxy */;
+			targetProxy = 42F03F5A615395781CDE7EAC4E519584 /* PBXContainerItemProxy */;
+		};
+		E1C44C569D20FD809AA6710B8F3F9D69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ExytePopupView;
+			target = E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */;
+			targetProxy = E58AD7809846422CD0780544D6827F4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		032504F201C69275441D32C68CCD1F0E /* Release */ = {
+		0855DCFADCE17C929EA6BC535E425B46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC55C2A0AB48D62D9BA375C7268CE49 /* ActivityIndicatorView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				MODULEMAP_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ActivityIndicatorView;
+				PRODUCT_NAME = ActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		1B192540F2A9837BEB6ED81A645D6731 /* Debug */ = {
+		1359C5A720AC77532A688BA6D44D484A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5376B58924045C03C16CE497D46243AB /* Pods-Savory-SavoryUITests.debug.xcconfig */;
+			baseConfigurationReference = AF788BA974E39E954535CEE62F161AE7 /* Pods-Savory-SavoryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -435,7 +718,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +739,154 @@
 			};
 			name = Debug;
 		};
-		48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */ = {
+		314B0B0AF04EFC40922FA2564780790D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A2750282B4CAFC01D95BAD1F918C07 /* ExytePopupView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExytePopupView/ExytePopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExytePopupView/ExytePopupView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ExytePopupView/ExytePopupView.modulemap";
+				PRODUCT_MODULE_NAME = ExytePopupView;
+				PRODUCT_NAME = ExytePopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FE0D19030361A8C6D9B3BA9B844E16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E852BF781858C8F483BAC0CA16E170 /* ActivityIndicatorView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ActivityIndicatorView;
+				PRODUCT_NAME = ActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		602A49284A1C1F24E80A884D5A14D1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A4A96585FC99FDF321B226DD5DEFED /* Pods-Savory.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Savory/Pods-Savory-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Savory/Pods-Savory.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7290770BE206FAD4F0E3DD31C1A9738D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3C05FE5286E19BB0DA91158DAB9BC9 /* Pods-Savory.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Savory/Pods-Savory-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Savory/Pods-Savory.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -509,7 +939,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -522,9 +952,71 @@
 			};
 			name = Debug;
 		};
-		626E0704EBAFAA182C5BBFD79F332D21 /* Debug */ = {
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD2B401922624104F854A0216E8E530A /* Pods-Savory.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AAE82A716DA3CB170F9231A228913017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82EDDFC99DE90AA0F8B23C748B8E2C99 /* Pods-SavoryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -536,16 +1028,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Savory/Pods-Savory-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Savory/Pods-Savory.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -559,47 +1051,9 @@
 			};
 			name = Debug;
 		};
-		6E1C537A5FE3938434CB37C23FFAD108 /* Release */ = {
+		C942DC6454594465DDEE0ED3AE53E725 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95950FCBB31CC16232A124474FBF2384 /* Pods-Savory.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Savory/Pods-Savory-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Savory/Pods-Savory.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74F8EAB1DF12EB306CC4DFBC425E301C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BC254A1BB6E89BB81DAE92BA0D17BF5 /* Pods-Savory-SavoryUITests.release.xcconfig */;
+			baseConfigurationReference = F98C9F536D760C4A186F99FC22F7AC25 /* Pods-Savory-SavoryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -613,7 +1067,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Savory-SavoryUITests/Pods-Savory-SavoryUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,9 +1089,9 @@
 			};
 			name = Release;
 		};
-		77C687B4C1F1CEB6831544058B01CD5F /* Release */ = {
+		D193020250CD54520A9F037B0D7BF603 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 002AF8F7525CF2BE77E6886142C0A49C /* Pods-SavoryTests.release.xcconfig */;
+			baseConfigurationReference = D8CCBFC89BA68A8D1E9E07FAC25A1C7A /* Pods-SavoryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -651,7 +1105,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -673,11 +1127,10 @@
 			};
 			name = Release;
 		};
-		D47B4BFDFA135137C4B9F9209EE875BA /* Debug */ = {
+		F18F3B1C476EA34A623D32AC945D712D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DB31E98C5BFDA5E9919E29C118D9439 /* Pods-SavoryTests.debug.xcconfig */;
+			baseConfigurationReference = 53FED806147B1565358E9B62B68AA5BE /* ExytePopupView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -687,23 +1140,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ExytePopupView/ExytePopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExytePopupView/ExytePopupView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SavoryTests/Pods-SavoryTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ExytePopupView/ExytePopupView.modulemap";
+				PRODUCT_MODULE_NAME = ExytePopupView;
+				PRODUCT_NAME = ExytePopupView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -713,29 +1165,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		038FF00F9286B74D7622C7B651AB5433 /* Build configuration list for PBXNativeTarget "Pods-Savory" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				626E0704EBAFAA182C5BBFD79F332D21 /* Debug */,
-				6E1C537A5FE3938434CB37C23FFAD108 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FC869565C64231A0FB62524F442373E /* Build configuration list for PBXNativeTarget "Pods-Savory-SavoryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1B192540F2A9837BEB6ED81A645D6731 /* Debug */,
-				74F8EAB1DF12EB306CC4DFBC425E301C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		25F00A4A052084CEEF27968F272AB3AC /* Build configuration list for PBXNativeTarget "Pods-SavoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D47B4BFDFA135137C4B9F9209EE875BA /* Debug */,
-				77C687B4C1F1CEB6831544058B01CD5F /* Release */,
+				AAE82A716DA3CB170F9231A228913017 /* Debug */,
+				D193020250CD54520A9F037B0D7BF603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		357384B13946065E38539B70C57FEB89 /* Build configuration list for PBXNativeTarget "Pods-Savory-SavoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1359C5A720AC77532A688BA6D44D484A /* Debug */,
+				C942DC6454594465DDEE0ED3AE53E725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -743,8 +1186,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */,
-				032504F201C69275441D32C68CCD1F0E /* Release */,
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C83296CEB95300D081372BEBCD99FA /* Build configuration list for PBXNativeTarget "ExytePopupView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F18F3B1C476EA34A623D32AC945D712D /* Debug */,
+				314B0B0AF04EFC40922FA2564780790D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A849A8B66179B81EC3788604DEC15E /* Build configuration list for PBXNativeTarget "ActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0855DCFADCE17C929EA6BC535E425B46 /* Debug */,
+				4FE0D19030361A8C6D9B3BA9B844E16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDC3E38FF19BDDE0BCF5D338636E200 /* Build configuration list for PBXNativeTarget "Pods-Savory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602A49284A1C1F24E80A884D5A14D1E3 /* Debug */,
+				7290770BE206FAD4F0E3DD31C1A9738D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

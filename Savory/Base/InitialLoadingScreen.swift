@@ -8,7 +8,16 @@
 import SwiftUI
 
 struct InitialLoadingScreen: View {
+    @EnvironmentObject var appColors: AppColors
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Text("Savory")
+                .font(.custom(Font.greatVibes, size: 65))
+                .foregroundStyle(appColors.foreground)
+            Spacer()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(LinearGradient(gradient: Gradient(colors: appColors.getAll()), startPoint: .top, endPoint: .bottom))
     }
 }

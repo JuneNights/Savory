@@ -64,13 +64,13 @@ struct CustomTabBar: View {
             VStack(spacing: 0) {
                 Divider()
                     .frame(height: 2)
-                    .background(appColors.backgroundPurple)
+                    .background(appColors.foreground)
                 TabsLayoutView(selectedTab: $selectedTab)
                     .frame(height: 56, alignment: .center)
             }
         }
         .frame(height: 56, alignment: .center)
-        .background(appColors.backgroundDark)
+        .background(appColors.background)
     }
     
     @ViewBuilder private var backgroundView: some View {
@@ -99,7 +99,7 @@ fileprivate struct TabsLayoutView: View {
                     TabButton(tab: tab, selectedTab: $selectedTab, namespace: namespace)
                         .frame(width: 25, height: 25, alignment: .center)
                     Text(tab.title)
-                        .foregroundStyle(tab == selectedTab ? appColors.foregroundRed : appColors.backgroundPurple)
+                        .foregroundStyle(tab == selectedTab ? appColors.mainLightRed : appColors.mainPurple)
                         .font(.custom(Font.ibmLightItalic, size: Font.Medium))
                 }
                 
@@ -122,7 +122,7 @@ fileprivate struct TabsLayoutView: View {
                     Image(systemName: tab.icon)
                         .resizable()
                         .font(.system(size: 25, weight: .semibold, design: .rounded))
-                        .foregroundStyle(isSelected ? appColors.foregroundRed : appColors.backgroundPurple)
+                        .foregroundStyle(isSelected ? appColors.mainLightRed : appColors.mainPurple)
                 }
             }
         }
