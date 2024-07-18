@@ -44,7 +44,7 @@ struct MainView: View {
         .task {
             Task {
                 await MainActor.run { tabsViewHelper.appLoading = true }
-                try await Task.sleep(seconds: 5)
+                try await Task.sleep(seconds: 2)
                 await MainActor.run { tabsViewHelper.appLoading = false }
             }
         }
