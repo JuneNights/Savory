@@ -23,7 +23,6 @@ struct BrowseMainView: View {
         .init(cuisine: .halal, selected: false, includes: [.sandwich, .stew, .curry, .sesame, .chicken, .salad, .pita, .vegan, .goat])
     ]
     @State private var foodItemsSelected: [FoodItem] = []
-    
     var body: some View {
         VStack {
             Text("Savory")
@@ -68,11 +67,31 @@ struct BrowseMainView: View {
 }
 
 struct BrowseStoresView: View {
+    let storeNames: [String] = [
+        "Charming Folly Bottles + Bites", "Tilted Amore Restaurant", "Mellow Folly Tastes + Taps",
+        "Grove Supper Club", "Hearty on Junior Bar and Grille", "Daily Lime Lodge",
+        "Twirling Iris Canteen", "Old Feast Bar and Grill", "Glorious Crave Café",
+        "Garlic Fete Provisions", "Last Mallard Trattoria", "Round Cloud Restaurant",
+        "Tart Acorn Trattoria", "Northern Bounty Tavern", "Junior's Ocean Lounge",
+        "Orange Orchid Trattoria", "Eclipsed Fork Inn", "Pig Tastes + Taps",
+        "Lilac Gourmand Place", "Bon Haystack Farmhouse", "Sage Charm Cucina",
+        "Junior's Crown Restaurant", "Red Tryst Ristorante", "Sweet Rabbit Provisions",
+        "Charmed Ocean & Co.", "Rambling Panache Eatery", "Mr. Hawk Farmhouse",
+        "Dove House", "Arrow Cucina", "Midnight Plates Inn",
+        "Rogue Acorn Eatery", "Dancing Escape Provisions", "Rambling Fox Chophouse",
+        "Fine Olive House", "Story of the Robin Lounge", "Honeybee House",
+        "Rock n' roll Olive Chophouse", "Mystic Apple Pubhouse", "Azure Trolley Restaurant",
+        "The Sails Farmhouse", "The Tree & Co.", "Superb Street Bottles + Bites",
+        "Purple Escape Cookery", "Boca Oak Cookery", "Gilded Feast Trattoria",
+        "Ocean Bistro", "Wayward Times Bar and Grill", "Flying Spoon Café",
+        "Happy Spark House", "Bittersweet Pail Tastes + Taps", "Le Tumbler Kitchen",
+        "Ginger Nomad Ristorante", "The Amore Cuisine", "Saucy Opal Bistro"
+    ]
     @Binding var stores: [Store]
     @Binding var foodItemsSelected: [FoodItem]
     var body: some View {
         VStack {
-            ForEach(Int.random(in: 1...3)...Int.random(in: 3...8), id: \.self) { index in
+            ForEach(1...Int.random(in: 3...5), id: \.self) { index in
                 ForEach(stores, id: \.self) { store in
                     if store.selected {
                         let randomizedItems = store.includes.randomized(with: nil)
